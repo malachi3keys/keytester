@@ -1,0 +1,40 @@
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 5rem;
+}
+
+.box {
+    display: inline-block;
+    border: 2px solid chocolate;
+    border-radius: 10px;
+    color: chocolate;
+    margin: 5px 1px;
+    padding: 2px;
+    height: 50px;
+    width: 50px;
+}
+
+.two-u {
+    height: 50px;
+    width: 100px;
+}
+
+.log {
+    display: inline-block;
+}
+
+#keypress {
+    margin-left: 5px;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+
+.highlight {
+    background-color: blueviolet;
+}
