@@ -6,81 +6,142 @@
         
         <title>Keytester 1000</title>
         <link rel="stylesheet" href="styles.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
     </head>
     <body>
-        <div>
-            this one holds the title yay! do grid instead of flex?
-        </div>
-        <div class="row1">
-            <div class="box Escape">Esc</div>
-            <div class="box F1">F1</div>
-            <div class="box F2">F2</div>
-            <div class="box F3">F3</div>
-            <div class="box F4">F4</div>
-            <div class="box F5">F5</div>
-            <div class="box F6">F6</div>
-            <div class="box F7">F7</div>
-            <div class="box F8">F8</div>
-            <div class="box F9">F9</div>
-            <div class="box F10">F10</div>
-            <div class="box F11">F11</div>
-            <div class="box F12">F12</div>   
-            <div class="box PrintScreen">PrtSc</div>
-            <div class="box ScrollLock">Scroll Lock</div>
-            <div class="box Pause">Pause\nBreak</div>
-        </div>
-        <div class="row2">
-            <div class="box Escape">~\n`</div>
-            <div class="box 1">!\n1</div>
-            <div class="box 2">@\n2</div>
-            <div class="box 3">#\n3</div>
-            <div class="box 4">$\n4</div>
-            <div class="box 5">%\n5</div>
-            <div class="box 6">^\n6</div>
-            <div class="box 7">&\n7</div>
-            <div class="box 8">*\n8</div>
-            <div class="box 9">(\n9</div>
-            <div class="box 10">)\n0</div>
-            <div class="box F11">_\n-</div>
-            <div class="box F12">+\n=</div>
-            <div class="box Backspace two-u">Backspace</div>   
-            <div class="box Insert">Insert</div>
-            <div class="box Home">Home</div>
-            <div class="box PageUp">PgUp</div>
-            <div class="box NumLock">Num Lock</div>
-            <div class="box Slash">/</div>
-            <div class="box NumpadMultiply">*</div>   
-            <div class="box NumpadSubtract">-</div>
-        </div>
-        <div class="row3">
-            <div class="box Tab">Tab</div>
-            <div class="box q Q">q</div>
-            <div class="box w W">w</div>
-            <div class="box e E">e</div>
-            <div class="box r R">r</div>
-            <div class="box t T">t</div>
-            <div class="box y Y">y</div>
-            <div class="box u U">u</div>
-            <div class="box i I">i</div>
-            <div class="box o O">o</div>  
-            <div class="box p P">p</div>
-            <div class="box r R">{\n[</div>
-            <div class="box t T">}\n]</div>
-            <div class="box y Y">|\n\\</div>
-            <div class="box Delete">Delete</div>
-            <div class="box p P">End</div>
-            <div class="box r R">PgDn</div>
-            <div class="box t T">7\nHome</div>
-            <div class="box y Y">8\n↑</div>
-            <div class="box y Y">9\nPgUp</div>
-            <div class="box y Y">+</div>
-        </div>
-        <br>
-        <div class="row2">
-           <div class="box Enter two-u">enter</div>
-           <div class="box Shift two-u">shift</div>
+        <h1>Keytester 1000</h1>
+
+        <div>Make sure your keyboard works. Keys will light up green when pressed.</div>
+        <div class="keyboard">
+            <div class="row1">
+                <div class="box Escape">Esc</div>
+                <div class="box F1">F1</div>
+                <div class="box F2">F2</div>
+                <div class="box F3">F3</div>
+                <div class="box F4">F4</div>
+                <div class="box F5">F5</div>
+                <div class="box F6">F6</div>
+                <div class="box F7">F7</div>
+                <div class="box F8">F8</div>
+                <div class="box F9">F9</div>
+                <div class="box F10">F10</div>
+                <div class="box F11">F11</div>
+                <div class="box F12">F12</div>   
+                <div class="box PrintScreen">PrtSc</div>
+                <div class="box ScrollLock">Scroll<br>Lock</div>
+                <div class="box Pause">Pause<br>Break</div>
+            </div>
+
+            <div class="row2">
+                <div class="box Backquote">~<br>`</div>
+                <div class="box Digit1">!<br>1</div>
+                <div class="box Digit2">@<br>2</div>
+                <div class="box Digit3">#<br>3</div>
+                <div class="box Digit4">$<br>4</div>
+                <div class="box Digit5">%<br>5</div>
+                <div class="box Digit6">^<br>6</div>
+                <div class="box Digit7">&<br>7</div>
+                <div class="box Digit8">*<br>8</div>
+                <div class="box Digit9">(<br>9</div>
+                <div class="box Digit0">)<br>0</div>
+                <div class="box Minus">_<br>-</div>
+                <div class="box Equal">+<br>=</div>
+                <div class="box Backspace u2">Backspace</div>   
+                <div class="box Insert">Insert</div>
+                <div class="box Home">Home</div>
+                <div class="box PageUp">PgUp</div>
+                <div class="box NumLock">Num<br>Lock</div>
+                <div class="box NumpadDivide">/</div>
+                <div class="box NumpadMultiply">*</div>   
+                <div class="box NumpadSubtract">-</div>
+            </div>
+
+            <div class="row3">
+                <div class="box Tab u15">Tab</div>
+                <div class="box KeyQ">q</div>
+                <div class="box KeyW">w</div>
+                <div class="box KeyE">e</div>
+                <div class="box KeyR">r</div>
+                <div class="box KeyT">t</div>
+                <div class="box KeyY">y</div>
+                <div class="box KeyU">u</div>
+                <div class="box KeyI">i</div>
+                <div class="box KeyO">o</div>  
+                <div class="box KeyP">p</div>
+                <div class="box BracketLeft">{<br>[</div>
+                <div class="box BracketRight">}<br>]</div>
+                <div class="box Backslash u15">|<br>\</div>
+                <div class="box Delete">Delete</div>
+                <div class="box End">End</div>
+                <div class="box PageDown">PgDn</div>
+                <div class="box Numpad7">7<br>Home</div>
+                <div class="box Numpad8">8<br>↑</div>
+                <div class="box Numpad9">9<br>PgUp</div>
+                <div class="box NumpadAdd h2">+</div>
+            </div>
+
+            <div class="row4">
+                <div class="box CapsLock u175">Caps Lock</div>
+                <div class="box KeyA">a</div>
+                <div class="box KeyS">s</div>
+                <div class="box KeyD">d</div>
+                <div class="box KeyF">f</div>
+                <div class="box KeyG">g</div>
+                <div class="box KeyH">h</div>
+                <div class="box KeyJ">j</div>
+                <div class="box KeyK">k</div>
+                <div class="box KeyL">l</div>  
+                <div class="box Semicolon">:<br>;</div>
+                <div class="box Quote">"<br>'</div>
+                <div class="box Enter u225">enter</div>
+                <div class="box Numpad4">4<br>←</div>
+                <div class="box Numpad4">5</div>
+                <div class="box Numpad6">6<br>→</div>
+            </div>
+
+            <div class="row5">
+                <div class="box ShiftLeft u225">shift</div>
+                <div class="box KeyZ">z</div>
+                <div class="box KeyX">x</div>
+                <div class="box KeyC">c</div>
+                <div class="box KeyV">v</div>
+                <div class="box KeyB">b</div>
+                <div class="box KeyN">n</div>
+                <div class="box KeyM">m</div>
+                <div class="box Comma"><<br>,</div>
+                <div class="box Period">><br>.</div>  
+                <div class="box Slash">?<br>/</div>
+                <div class="box ShiftRight u275">shift</div>
+                <div class="box ArrowUp">↑</div>
+                <div class="box Numpad1">1<br>End</div>
+                <div class="box Numpad2">2<br>↓</div>
+                <div class="box Numpad3">3<br>PgDn</div>
+                <div class="box Enter h2">enter</div>
+            </div>
+            
+            <div class="row6">
+                <div class="box ControlLeft u125">Ctrl</div>
+                <div class="box MetaLeft u125">Win</div>
+                <div class="box AltLeft u125">Alt</div>
+                <div class="box Space u625">Space</div>
+                <div class="box AltRight u125">Alt</div>
+                <div class="box MetaRight u125">Win</div>
+                <div class="box ContextMenu u125">Menu</div>
+                <div class="box ControlRight u125">Ctrl</div>
+                <div class="box ArrowLeft">←</div>
+                <div class="box ArrowDown">↓</div>
+                <div class="box ArrowRight">→</div>
+                <div class="box Numpad0 u2">0<br>Ins</div>  
+                <div class="box NumpadDecimal">.<br>Del</div>
+            </div>    
         </div>
         
+        <br>
         <div>
             <div class="log"><p>Last Pressed Key:</p></div>
             <div class="log"><p id="keypress"></p></div>    

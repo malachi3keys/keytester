@@ -1,25 +1,63 @@
 body {
-    background-color: bisque;
+    /* background-color: bisque; */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 2rem 5rem;
 }
 
-.box {
-    display: inline-block;
-    border: 2px solid chocolate;
-    border-radius: 10px;
-    color: chocolate;
-    margin: 5px 1px;
-    padding: 2px;
-    height: 50px;
-    width: 50px;
+.keyboard {
+    margin: 2rem;
 }
 
-.two-u {
+.row1, .row2, .row3, .row4, .row5, .row6 {
+    display: flex;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.2rem;
     height: 50px;
+    width: 50px;
+    margin: 5px 1px;
+    padding: 2px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: inline-flex; */
+}
+
+.u125 {
+    width: 62.5px;
+}
+
+.u15 {
+    width: 75px;
+}
+
+.u175 {
+    width: 87.5px;
+}
+
+.u2 {
     width: 100px;
+}
+
+.u225 {
+    width: 112.5px;
+}
+
+.u275 {
+    width: 137.5px;
+}
+
+.u625 {
+    width: 312.5px;
+}
+
+.h2 {
+    height: 100px;
 }
 
 .log {
@@ -36,5 +74,7 @@ body {
 }
 
 .highlight {
-    background-color: blueviolet;
+    background-color: rgb(35, 208, 35);
+    color: white;
 }
+
