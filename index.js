@@ -17,10 +17,17 @@ function displayKey(currentKey, currentCode) {
 }
 
 function keyAnimation(currentCode) {
-    var activeButton = document.querySelector('.' + currentCode);
-    activeButton.classList.add('pressed', 'highlight');
-
-    setTimeout(function(){
-        activeButton.classList.remove('pressed');    
-    }, 100);
+    var activeButton = document.querySelectorAll('.' + currentCode);
+    
+    for (i = 0; i < activeButton.length; i++) {
+        activeButton[i].classList.add('pressed', 'highlight');
+    
+        setTimeout(timetest(i), 100);
+    
+        function timetest(i) {
+            activeButton[i].classList.remove('pressed'); 
+        }
+    } 
 }
+
+// 

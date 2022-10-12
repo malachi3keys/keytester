@@ -1,65 +1,111 @@
 body {
-    /* background-color: bisque; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     text-align: center;
     padding: 2rem 5rem;
 }
 
-.keyboard {
-    margin: 2rem;
+.instructions {
+    margin-bottom: 2rem;
 }
 
-.row1, .row2, .row3, .row4, .row5, .row6 {
-    display: flex;
+/* .keyboard {
+    margin: 2rem auto; 
+} */
+
+#main-board {
+    display: grid;
+    grid-template-columns: repeat(90, minmax(12.5px, 1fr));
+    grid-template-rows: repeat(6, minmax(50px, 1fr));
 }
 
-.box {
+/* #tkl {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    grid-template-rows: repeat(6, minmax(50px, 1fr));
+}
+
+#numpad {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-rows: repeat(6, minmax(50px, 1fr));
+} */
+
+.key {
     border: 2px solid black;
     border-radius: 10px;
     font-size: 1rem;
     line-height: 1.2rem;
-    height: 50px;
-    width: 50px;
-    margin: 5px 1px;
-    padding: 2px;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* display: inline-flex; */
+    margin: 3px 2px;
+    padding: 10px;    
+    grid-column: span 4; 
+    grid-row: span 1;
 }
 
-.u125 {
-    width: 62.5px;
+/* .key2 {
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 3px 2px;
+    padding-top: 10px;
+    grid-column: span 1; 
+    grid-row: span 1;
+} */
+
+.space1 {
+    border: none;
+    grid-column: span 4;
+} 
+
+.space2 {
+    border: none;
+    grid-column: span 2;
 }
 
-.u15 {
-    width: 75px;
-}
-
-.u175 {
-    width: 87.5px;
-}
-
-.u2 {
-    width: 100px;
-}
-
-.u225 {
-    width: 112.5px;
-}
-
-.u275 {
-    width: 137.5px;
-}
-
-.u625 {
-    width: 312.5px;
+.space3 {
+    border: none;
+    grid-column: span 1;
 }
 
 .h2 {
-    height: 100px;
+    grid-row: span 2;
 }
 
+.u125 {
+    grid-column: span 5;
+}
+
+.u15 {
+    grid-column: span 6;
+}
+
+.u175 {
+    grid-column: span 7;
+}
+
+.u2 {
+    grid-column: span 8;
+}
+
+.u2-num {
+    /* grid-column: span 2; */
+    grid-row: span 8;
+}
+
+.u225 {
+    grid-column: span 9;
+}
+
+.u275 {
+    grid-column: span 11;
+}
+
+.u625 {
+    grid-column: span 25;
+}
+
+/* Show key presses */
 .log {
     display: inline-block;
 }
@@ -68,6 +114,7 @@ body {
     margin-left: 5px;
 }
 
+/* keydown behavior */
 .pressed {
     box-shadow: 0 3px 4px 0 #DBEDF3;
     opacity: 0.5;
@@ -77,4 +124,3 @@ body {
     background-color: rgb(35, 208, 35);
     color: white;
 }
-
