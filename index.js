@@ -1,4 +1,4 @@
-//Keypress
+// Keypress
 const showkey = document.querySelector('#keypress');
 
 document.addEventListener('keydown', function(event) {
@@ -37,3 +37,16 @@ function keyAnimation(currentCode) {
             }, 100);
         }
 }
+
+// Light Mode
+const mode = document.querySelector('.theme-btn');
+
+mode.addEventListener('click', function(){
+    document.body.classList.toggle('light-mode');
+    
+    if (mode.innerHTML == 'Light Mode'){
+        mode.innerHTML = 'Dark Mode';     
+    } else{
+        mode.innerHTML = 'Light Mode';     
+    }
+})

@@ -3,24 +3,58 @@ body {
     font-size: 1.5rem;
     text-align: center;
     padding: 2rem 5rem;
+    background-color: #121212;
+    color: #eeeeee;
+}
+
+/* Light mode */
+body.light-mode {
+    background-color: #eeeeee;
+    color: #000;
+}
+
+body.light-mode .key {
+    background-color: #eeeeee;
+    border: 7px outset #d5d8da;
+}
+
+body.light-mode .spborder {
+    background-color: transparent;
+    border: none;
+}
+
+.theme {
+    text-align: left;
+}
+
+.theme-btn {
+    background-color: #b01d90;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px;
 }
 
 .instructions {
     margin-bottom: 2rem;
 }
 
+.inst-div {
+    margin-top: 10px;
+}
+
 .orange {
-    background-color: #c06621;
+    background-color: #b35f1e;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: #ffffff;
     display: inline-block;
-    padding: 5px;
+    padding: 7px;
 }
 
 .keyboard {
-    margin: 2rem auto;
-    padding: 0 5%;
+    margin: 2rem auto;  
 }
 
 .main-board {
@@ -30,7 +64,8 @@ body {
 }
 
 .key {
-    border: 2px solid black;
+    background-color: #333639;
+    border: 7px outset #25282a;
     border-radius: 10px;
     font-size: 1.1rem;
     grid-column: span 4; 
@@ -75,18 +110,20 @@ body {
 
 /* space between keys */
 .space1 {
-    border: none;
     grid-column: span 4;
 } 
 
 .space2 {
-    border: none;
     grid-column: span 2;
 }
 
 .space3 {
-    border: none;
     grid-column: span 1;
+}
+
+.spborder {
+    background-color: transparent;
+    border: none;
 }
 
 
@@ -101,7 +138,7 @@ body {
     background-color: #b01d90;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: #ffffff;
     margin-left: 5px;
     padding: 10px;    
 }
@@ -109,13 +146,14 @@ body {
 
 /* keydown behavior */
 .pressed {
-    box-shadow: 0 3px 4px 0 #DBEDF3;
+    box-shadow: 0 3px 4px 0 #dbedf3;
     opacity: 0.5;
 }
 
 .highlight {
-    background-color: #c06621;
-    color: white;
+    background-color: #b35f1e; 
+    border: 7px outset #9c5118; /*#ad5919*/
+    color: #ffffff;
 }
 
 
