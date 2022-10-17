@@ -18,11 +18,6 @@ body.light-mode .key {
     border: 7px outset #d5d8da;
 }
 
-body.light-mode .spborder {
-    background-color: transparent;
-    border: none;
-}
-
 .theme {
     text-align: left;
 }
@@ -36,7 +31,7 @@ body.light-mode .spborder {
     padding: 10px;
 }
 
-.instructions {
+#instructions {
     margin-bottom: 2rem;
 }
 
@@ -53,11 +48,11 @@ body.light-mode .spborder {
     padding: 7px;
 }
 
-.keyboard {
+#keyboard {
     margin: 2rem auto;  
 }
 
-.main-board {
+#main-board {
     display: inline-grid;
     grid-template-columns: repeat(90, minmax(18px, 1fr)); 
     grid-template-rows: repeat(6, minmax(72px, 1fr));
@@ -121,7 +116,7 @@ body.light-mode .spborder {
     grid-column: span 1;
 }
 
-.spborder {
+#main-board > .spborder {
     background-color: transparent;
     border: none;
 }
@@ -150,7 +145,7 @@ body.light-mode .spborder {
     opacity: 0.5;
 }
 
-.highlight {
+#main-board > .highlight {
     background-color: #b35f1e; 
     border: 7px outset #9c5118; /*#ad5919*/
     color: #ffffff;
@@ -169,7 +164,7 @@ body.light-mode .spborder {
         font-size: 1rem;
     }
     
-    .main-board {
+    #main-board {
         grid-template-columns: repeat(90, minmax(15px, 1fr));
     }
 }
