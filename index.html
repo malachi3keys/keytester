@@ -14,10 +14,19 @@
         <link rel="manifest" href="favicon/site.webmanifest">
     </head>
     <body>
-        <div id="theme">
-            <button class="theme-btn">Light Mode</button>
+        
+        <div class="fancy">
+            <div class="toggle-switch">
+                <label for="mode">
+                    <input type="checkbox" id="mode">
+                    <span class="slider"></span>
+                </label>
+            </div>    
         </div>
-        <h1>Keytester 1000</h1>
+        <!-- <div id="theme">
+            <button class="theme-btn">Light Mode</button>
+        </div> -->
+        <h1>Keytester 1000</h1> 
 
         <div id="instructions">
             <div class="inst-div">Press a key, any key ✨</div>
@@ -186,8 +195,8 @@
         </div>
 
         <div class="log" >
-            <div><p>Last Pressed Key:</p></div>
-            <div><p id="keypress">Press any key</p></div>    
+            <div>Last Pressed Key:</div>
+            <div id="keypress">Press any key</div>    
         </div>
         <script src="index.js"></script>
     </body>

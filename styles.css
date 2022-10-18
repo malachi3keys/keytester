@@ -1,10 +1,10 @@
 body {
+    background-color: #121212;
+    color: #eeeeee;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     text-align: center;
     padding: 2rem 5rem;
-    background-color: #121212;
-    color: #eeeeee;
 }
 
 /* Light mode */
@@ -18,7 +18,7 @@ body.light-mode .key {
     border: 7px outset #d5d8da;
 }
 
-.theme {
+#theme {
     text-align: left;
 }
 
@@ -31,6 +31,70 @@ body.light-mode .key {
     padding: 10px;
 }
 
+/* Toggle switch */
+:root {
+    --light: #d8dbe0;
+    --dark: #28292c;
+}
+   
+.fancy {
+    height: 40px;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 80px;
+}
+  
+label {
+    background-color: var(--dark);
+    border-radius: 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+  
+input {
+    display: none;
+    position: absolute;
+}
+  
+.slider {
+    background-color: var(--dark);
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+    position: absolute;
+    left: 0px;
+}
+  
+input:checked ~ .slider {
+    background-color: var(--light);
+}
+  
+.slider::before {
+    background-color: var(--dark);
+    border-radius: 50%;
+    box-shadow: inset 10px -3px 0px 0px var(--light);
+    content: "";
+    height: 25px;
+    width: 25px;
+    transition: 0.3s;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+  
+input:checked ~ .slider::before {
+    background-color: var(--dark);
+    box-shadow: none;
+    transform: translateX(40px);
+}
+
+/* Intro */
 #instructions {
     margin-bottom: 2rem;
 }
@@ -48,8 +112,9 @@ body.light-mode .key {
     padding: 7px;
 }
 
+/* Full Keyboard  */
 #keyboard {
-    margin: 2rem auto;  
+    margin: 3rem auto;  
 }
 
 #main-board {

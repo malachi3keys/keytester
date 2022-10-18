@@ -9,7 +9,7 @@ document.addEventListener('keydown', function(event) {
 
 
 function displayKey(currentKey, currentCode) {
-    if (currentKey === ''){
+    if (currentKey === ' '){
         showkey.innerHTML = currentCode;     
     } else{
         showkey.innerHTML = currentKey;
@@ -39,14 +39,21 @@ function keyAnimation(currentCode) {
 }
 
 // Light Mode
-const mode = document.querySelector('.theme-btn');
+const ld = document.querySelector('#mode');
 
-mode.addEventListener('click', function(){
-    document.body.classList.toggle('light-mode');
-    
-    if (mode.innerHTML == 'Light Mode'){
-        mode.innerHTML = 'Dark Mode';     
-    } else{
-        mode.innerHTML = 'Light Mode';     
-    }
+ld.addEventListener('click', ()=>{     
+       document.body.classList.toggle('light-mode'); 
 })
+
+// light mode button
+// const mode = document.querySelector('.theme-btn');
+
+// mode.addEventListener('click', function(){
+//     document.body.classList.toggle('light-mode');
+    
+//     if (mode.innerHTML == 'Light Mode'){
+//         mode.innerHTML = 'Dark Mode';     
+//     } else{
+//         mode.innerHTML = 'Light Mode';     
+//     }
+// })
