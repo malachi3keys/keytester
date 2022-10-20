@@ -39,21 +39,17 @@ function keyAnimation(currentCode) {
 }
 
 // Light Mode
-const ld = document.querySelector('#mode');
+const mode = document.querySelector('#mode');
+const main = document.body;
+const title = document.querySelector('.toggle-switch');
 
-ld.addEventListener('click', ()=>{     
-       document.body.classList.toggle('light-mode'); 
-})
-
-// light mode button
-// const mode = document.querySelector('.theme-btn');
-
-// mode.addEventListener('click', function(){
-//     document.body.classList.toggle('light-mode');
+mode.addEventListener('click', ()=>{     
+    main.classList.toggle('light-mode'); 
     
-//     if (mode.innerHTML == 'Light Mode'){
-//         mode.innerHTML = 'Dark Mode';     
-//     } else{
-//         mode.innerHTML = 'Light Mode';     
-//     }
-// })
+    //Change title so user knows what clicking switch does
+    if (main.classList.contains('light-mode')){    
+        title.setAttribute('title', 'click for dark mode');
+    } else{
+        title.setAttribute('title', 'click for light mode');
+    }
+})
