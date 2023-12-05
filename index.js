@@ -1,4 +1,7 @@
 // Keypress
+import {layoutData} from "./layouts.js";
+// const {layoutData} = data.default;
+console.log(layoutData);
 const showkey = document.querySelector('#keypress');
 
 document.addEventListener('keydown', function(event) {
@@ -53,3 +56,45 @@ mode.addEventListener('click', ()=>{
         title.setAttribute('title', 'click for light mode');
     }
 })
+
+// Layout Selection
+
+// console.log(layoutData);
+const keyboard = document.querySelector('#main-board');
+const layoutChoice = document.querySelector('#select-layout')
+
+// layoutChoice.addEventListener('change', ()=>{
+//     fetch('./layouts.json')
+//         .then(function (response) {
+//             if (!response.ok) {
+//                 throw new Error("Failed with HTTP code " + response.status);
+//             }
+//             return response.json();
+//         })
+//         .then(function (data) {
+//             console.log(data);
+//             loadLayout(data);
+//         })
+//         .catch(function (err) {
+//             console.log(err);
+//         }); 
+// })
+
+
+
+  function loadLayout(data){
+    for(var i = 0; i < data.qwerty.length; i++){
+        for(var j = 0; j < data.qwerty[i].length; j++){
+            var height = data.qwerty[i][j]["height"];
+            var width = data.qwerty[i][j]["width"];
+            var text = data.qwerty[i][j]["value"];
+            var keycode = data.qwerty[i][j]["keycode"]; 
+            var newDiv = document.createElement('div');
+
+            newDiv.classList = `key ${keycode} ${width} ${height}`;
+            newDiv.innerHTML = `${text}`;
+
+            keyboard.appendChild(newDiv);
+        }
+    }
+  }

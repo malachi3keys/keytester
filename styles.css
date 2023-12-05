@@ -109,6 +109,17 @@ input:checked + .slider::before {
     padding: 7px;
 }
 
+/* .select-div {
+    display: flex;
+    flex-direction: column;
+} */
+
+#select-layout {
+    border-radius: 10px;
+    font-size: inherit;
+    text-align: center;
+}
+
 /* Full Keyboard  */
 #keyboard {
     margin: 3rem auto;  
