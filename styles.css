@@ -117,6 +117,7 @@ input:checked + .slider::before {
 #select-layout {
     border-radius: 10px;
     font-size: inherit;
+    padding: 5px 0;
     text-align: center;
 }
 
@@ -139,6 +140,7 @@ input:checked + .slider::before {
     border: 7px outset #25282a;
     border-radius: 10px;
     font-size: 1.1rem;
+    font-weight: 400;
     grid-column: span 4; 
     grid-row: span 1;
     line-height: 1.2rem;

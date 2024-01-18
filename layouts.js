@@ -123,18 +123,6 @@ export const layoutData =
                 "width": ""
             },
             {
-                "keycode": "PrintScreen",
-                "value": "PrtSc",
-                "height": "",
-                "width": ""
-            },
-            {
-                "keycode": "PrintScreen",
-                "value": "PrtSc",
-                "height": "",
-                "width": ""
-            },
-            {
                 "keycode": "blank",
                 "value": "",
                 "height": "",
