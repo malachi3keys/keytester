@@ -174,7 +174,7 @@ export const layoutData =
             },
             {
                 "keycode": "Digit3",
-                "value": "~<br>`",
+                "value": "#<br>3",
                 "height": "",
                 "width": ""
             },
