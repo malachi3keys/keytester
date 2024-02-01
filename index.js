@@ -53,7 +53,11 @@ mode.addEventListener('click', () => {
 // Layout Selection
 const keyboard = document.querySelector('#main-board');
 const layoutChoice = document.querySelector('#select-layout')
-window.addEventListener('load',() => loadLayout(qwerty))
+window.addEventListener('load',() => {
+    layoutChoice.value = 'qwerty';
+    loadLayout(qwerty);
+    mode.checked = false;
+})
 
 layoutChoice.addEventListener('change', () => {
     keyboard.replaceChildren();
@@ -79,16 +83,13 @@ layoutChoice.addEventListener('change', () => {
 function loadLayout(layout){
     let layoutCount = 0;
 
-    defaultKeyboard.map((key) => {
-        let keycode = key.keycode;
-        let text = key.value;
-        let height = key.height;
-        let width = key.width;
+    defaultKeyboard.forEach((key) => {
+        let {keycode, value, height, width} = key;
         let border = ''
         
-        if (keycode == '' && text == '') {
+        if (keycode == '' && value == '') {
             keycode = layout[layoutCount][0];
-            text = layout[layoutCount][1];
+            value = layout[layoutCount][1];
             layoutCount++;
         } else if (keycode == 'blank'){
             border = 'spborder'
@@ -96,7 +97,7 @@ function loadLayout(layout){
     
         let newDiv = document.createElement('div');
         newDiv.classList = `key ${keycode} ${width} ${height} ${border}` ;
-        newDiv.innerHTML = `${text}`;
+        newDiv.innerHTML = `${value}`;
         keyboard.appendChild(newDiv);
     })
 }

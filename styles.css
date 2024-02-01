@@ -6,6 +6,8 @@
 :root {
     --light: #d8dbe0;
     --dark: #28292c;
+    --pressed-highlight: #b35f1e;
+    --pressed-shadow: #9c5118;
 }
 
 body {
@@ -101,7 +103,7 @@ input:checked + .slider::before {
 }
 
 .orange {
-    background-color: #b35f1e;
+    background-color: var(--pressed-highlight);
     border: none;
     border-radius: 5px;
     color: #ffffff;
@@ -109,15 +111,10 @@ input:checked + .slider::before {
     padding: 7px;
 }
 
-/* .select-div {
-    display: flex;
-    flex-direction: column;
-} */
-
 #select-layout {
     border-radius: 10px;
     font-size: inherit;
-    padding: 5px 0;
+    padding: 5px 7px;
     text-align: center;
 }
 
@@ -224,8 +221,8 @@ input:checked + .slider::before {
 }
 
 #main-board > .highlight {
-    background-color: #b35f1e; 
-    border: 7px outset #9c5118; /*#ad5919*/
+    background-color: var(--pressed-highlight); 
+    border: 7px outset var(--pressed-shadow); /*#ad5919*/
     color: #ffffff;
 }
 
